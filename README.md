@@ -60,6 +60,7 @@ inherit_gem:
     - config/performance.yml   # rubocop-performance
     - config/rspec.yml         # rubocop-rspec
     # - config/minitest.yml    # rubocop-minitest
+    # - config/rake.yml        # rubocop-rake
 ```
 
 ## Layout
@@ -70,6 +71,7 @@ File                            | Role
 `config/shopify_baseline.yml`   | Vendored Shopify 2.18 ruleset. Generated: do not hand-edit.
 `config/rspec.yml`              | RSpec opinions, opt-in.
 `config/minitest.yml`           | Minitest plugin, opt-in.
+`config/rake.yml`               | Rake plugin, opt-in.
 `config/performance.yml`        | Performance plugin, opt-in.
 
 ## Maintaining the baseline

@@ -13,4 +13,5 @@ gem "rubocop-shopify", "= 2.18.0", require: false
 # Optional companions, so `rake rubocop` can dogfood every opt-in config.
 gem "rubocop-minitest", require: false
 gem "rubocop-performance", require: false
+gem "rubocop-rake", require: false
 gem "rubocop-rspec", require: false

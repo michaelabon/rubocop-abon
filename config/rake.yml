@@ -1,0 +1,5 @@
+---
+# Opt-in: `inherit_gem: rubocop-abon: [config/default.yml, config/rake.yml]`
+
+plugins:
+  - rubocop-rake
