@@ -1,0 +1,35 @@
+---
+# rubocop-abon — core Ruby style. This is the file to edit.
+# The 600-odd vendored Shopify 2.18 cop settings sit behind it in
+# shopify_baseline.yml; everything here is a deliberate personal choice.
+
+inherit_from: shopify_baseline.yml
+
+inherit_mode:
+  merge:
+    - Exclude
+    - Include
+
+AllCops:
+  # Shopify sets `disable` because their style-guide maintainers triage new cops.
+  # Nobody triages mine, so I'd rather see a new cop and decide than never meet it.
+  NewCops: enable
+
+# I prefer the better diffs
+Style/TrailingCommaInArguments:
+  Enabled: true
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInHashLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: comma
+
+# Double quotes everywhere, so switching to interpolation is never a quote change.
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: double_quotes

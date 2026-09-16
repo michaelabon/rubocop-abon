@@ -1,0 +1,5 @@
+---
+# Opt-in: `inherit_gem: rubocop-abon: [config/default.yml, config/performance.yml]`
+
+plugins:
+  - rubocop-performance

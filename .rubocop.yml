@@ -1,0 +1,13 @@
+---
+inherit_from:
+  - config/default.yml
+  - config/performance.yml
+
+AllCops:
+  Exclude:
+    - "vendor/**/*"
+
+Naming/FileName:
+  Exclude:
+    # RubyGems requires the entry point to match the gem name, hyphen and all.
+    - "lib/rubocop-abon.rb"

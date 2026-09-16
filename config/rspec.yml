@@ -1,0 +1,10 @@
+---
+# Opt-in: `inherit_gem: rubocop-abon: [config/default.yml, config/rspec.yml]`
+
+plugins:
+  - rubocop-rspec
+
+# The idea that each example should have one and only one expectation is great,
+# but that expectation can be an "idea" rather than a single `expect` concept
+RSpec/MultipleExpectations:
+  Enabled: false

@@ -1,0 +1,6 @@
+# A gem must work against a range of dependency versions, so the lockfile is
+# a local development detail rather than a shipped constraint.
+/Gemfile.lock
+
+/pkg/
+*.gem
